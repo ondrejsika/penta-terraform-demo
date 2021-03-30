@@ -1,3 +1,9 @@
+apply:
+	terraform apply -refresh=false
+
+apply-refresh:
+	terraform apply
+
 fmt:
 	terraform fmt -recursive
 
