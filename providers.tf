@@ -14,3 +14,12 @@ provider "azurerm" {
   tenant_id       = var.azure_tenant_id
   subscription_id = var.azure_subscription_id
 }
+
+variable "gcp_project" {}
+variable "gcp_region" {}
+variable "gcp_zone" {}
+provider "google" {
+  project = var.gcp_project
+  region  = var.gcp_region
+  zone    = var.gcp_zone
+}

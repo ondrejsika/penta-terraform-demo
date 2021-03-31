@@ -8,5 +8,9 @@ terraform {
       source  = "digitalocean/digitalocean"
       version = "2.7.0"
     }
+    google = {
+      source  = "hashicorp/google"
+      version = "3.62.0"
+    }
   }
 }
