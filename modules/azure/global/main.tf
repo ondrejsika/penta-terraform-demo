@@ -12,7 +12,6 @@ resource "azurerm_resource_group" "main" {
 
 output "conf" {
   value = {
-    region = "fra1"
     images = {
       debian = "debian-10-x64"
     }
